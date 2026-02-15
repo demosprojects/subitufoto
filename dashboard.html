@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de fotos | Mas que Burger's</title>
+    <link rel="icon" href="https://imagedelivery.net/ut8GNCA1obOu4JnXrJ_J9Q/e7b59903-06e0-48f8-1bb1-71bd6da8a800/public" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mqb-blue': '#014926',
+                        'mqb-dark': '#0a0a0b',
+                    },
+                    fontFamily: {
+                        'impact': ['Bebas Neue', 'sans-serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .bg-pattern {
+            background-image: radial-gradient(#014926 0.5px, transparent 0.5px);
+            background-size: 30px 30px;
+            opacity: 0.05;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-white text-mqb-dark font-sans selection:bg-mqb-blue selection:text-white">
+
+    <div class="fixed inset-0 bg-pattern -z-10"></div>
+
+    <div id="app" class="min-h-screen"></div>
+
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>

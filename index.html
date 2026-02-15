@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subí tu foto | Mas que Burger's</title>
+    <link rel="icon" href="https://imagedelivery.net/ut8GNCA1obOu4JnXrJ_J9Q/e7b59903-06e0-48f8-1bb1-71bd6da8a800/public" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mqb-blue': '#014926',
+                        'mqb-dark': '#0a0a0b',
+                    },
+                    fontFamily: {
+                        'impact': ['Bebas Neue', 'sans-serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .bg-pattern {
+            background-image: radial-gradient(#014926 0.5px, transparent 0.5px);
+            background-size: 30px 30px;
+            opacity: 0.05;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeIn 0.4s ease forwards; }
+    </style>
+</head>
+<body class="bg-white text-mqb-dark font-sans">
+
+    <div class="fixed inset-0 bg-pattern -z-10"></div>
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <img src="https://imagedelivery.net/ut8GNCA1obOu4JnXrJ_J9Q/e7b59903-06e0-48f8-1bb1-71bd6da8a800/public" 
+                     alt="Logo" class="w-12 h-12 object-contain">
+                <div>
+                    <h1 class="font-impact text-2xl tracking-tight leading-none uppercase">Mas que <span class="text-mqb-blue">Burger's</span></h1>
+                    <p class="text-[8px] font-bold text-gray-400 uppercase tracking-widest italic">Mas sabor en cada bocado</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-xl mx-auto px-4 py-12">
+        <div id="app" class="animate-fade-in"></div>
+    </main>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
