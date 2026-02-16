@@ -104,7 +104,7 @@ container.innerHTML = `
         </div>
         <div class="flex items-center gap-5">
           <span class="bg-mqb-blue text-white w-10 h-10 rounded-full flex items-center justify-center font-impact text-2xl shrink-0">2</span>
-          <p>Subila a tus historias mencionando a <span class="text-mqb-blue">@masqueburgers</span></p>
+          <p>Subila a tus historias mencionando a <span class="text-mqb-blue">@mas_queburgers</span></p>
         </div>
         <div class="flex items-center gap-5">
           <span class="bg-mqb-blue text-white w-10 h-10 rounded-full flex items-center justify-center font-impact text-2xl shrink-0">3</span>
